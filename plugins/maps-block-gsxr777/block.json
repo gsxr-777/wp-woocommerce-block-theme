@@ -1,0 +1,27 @@
+{
+  "apiVersion": 2,
+  "name": "maps-block-gsxr777/map-block",
+  "title": "Map Block GSXR777",
+  "category": "embed",
+  "icon": "location",
+  "description": "Block for adding Yandex or Google Maps.",
+  "attributes": {
+    "mapType": {
+      "type": "string",
+      "default": "yandex"
+    },
+    "mapUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "frameWidth": {
+      "type": "string",
+      "default": "100%"
+    },
+    "frameHeight": {
+      "type": "string",
+      "default": "250"
+    }
+  },
+  "editorScript": "maps-block-gsxr777-script"
+}

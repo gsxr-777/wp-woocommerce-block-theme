@@ -1,0 +1,102 @@
+[data-theme='dark'] body {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
+[data-theme='dark'] .wc-block-mini-cart__template-part,
+.wp-block-woocommerce-mini-cart-contents {
+  background-color: #000000;
+  color: #f1f1f1;
+}
+[data-theme='dark'] a {
+  color: #d3d3d3;
+}
+[data-theme='dark'] a:hover {
+  color: #ffffff;
+}
+[data-theme='dark'] header,
+footer {
+  background-color: #1f1f1f;
+}
+[data-theme='dark'] .content {
+  background-color: #242424;
+  color: #e5e5e5;
+}
+.dark-mode-checkbox {
+  display: none;
+}
+.dark-mode-slider {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background-color: #757575;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dark-mode-slider:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+.dark-mode-checkbox:checked + .dark-mode-slider {
+  background-color: #212121;
+}
+.dark-mode-checkbox:checked + .dark-mode-slider:before {
+  transform: translateX(28px);
+}
+[data-theme='dark'] .toggle-icon svg {
+  fill: #bb86fc;
+}
+[data-theme='light'] .toggle-icon svg {
+  fill: #000000;
+}
+span.wp-block-navigation-item__label:hover {
+  color: #d3d3d3;
+}
+@media (min-width: 850px) {
+  .moon-icon {
+    position: absolute;
+    top: -1px;
+    left: 35px;
+  }
+  .sun-icon {
+    position: absolute;
+    top: -3px;
+    left: 2px;
+  }
+}
+@media (max-width: 849px) {
+  .moon-icon {
+    position: absolute;
+    top: 4px;
+    left: 35px;
+  }
+  .sun-icon {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+  .dark-mode-slider:before {
+    top: 3px;
+  }
+  .dark-mode-checkbox:checked + .dark-mode-slider:before {
+    transform: translateX(30px);
+  }
+}
+[data-theme='dark']::selection {
+  background: #ababab !important;
+  color: #191919 !important;
+  text-shadow: none;
+}
+::selection {
+  background: #360249 !important;
+  color: #ffffff !important;
+  text-shadow: none;
+}
